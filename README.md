@@ -41,7 +41,7 @@ You will need to create an Index in Pinecone. Navigate to their [site](https://a
 
 When creating this Index, note the name you use and add it the `.env` file we created. When you create you account, this is also where you will find the Pinecone API key we will use in the `.env` file.
 
-If you intend to use the `text-embedding3-large` embedding model from OpenAI, we will want to use a dimensions of **3072**. Otherwise, if we are using `text-embedding-3-small` or older models, we will want to use a dimension of **1536**.
+If you intend to use the `text-embedding3-large` embedding model from OpenAI, we will want to use a dimensions of **3072** when creating the Index. Otherwise, if we are using `text-embedding-3-small` or older models, we will want to use a dimension of **1536**.
 
 ### Adding to the Index
 
