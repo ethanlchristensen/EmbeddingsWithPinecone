@@ -27,7 +27,16 @@ if not st.session_state.get("messages"):
 
 
 for role, message in st.session_state.get("messages"):
-    st.chat_message(name=role).write(message)
+    if role == "assistant":
+        with st.chat_message(name=role):
+            if isinstance(message, tuple):
+                q, r = message
+                with st.expander(label=f"Here is a march I found for: {q}"):
+                    st.markdown(r)
+            else:
+                st.markdown(message)
+    else:
+        st.chat_message(name=role).write(message)
 
 query = st.chat_input(placeholder="Enter your message")
 
@@ -48,8 +57,9 @@ if query:
             except Exception as e:
                 print(f"ERROR: {e}")
         if matches:
-            response = f"Here is a match I found! <br/><br/>{matches[0]['metadata']['text']}"
-            st.markdown(response, unsafe_allow_html=True)
+            response = f"{matches[0]['metadata']['text']}"
+            with st.expander(label=f"Here is a match I found for: {query}"):
+                st.markdown(response, unsafe_allow_html=True)
                 
     st.session_state["messages"].append(("user", query))
-    st.session_state["messages"].append(("assistant", response))
+    st.session_state["messages"].append(("assistant", (query, response)))
