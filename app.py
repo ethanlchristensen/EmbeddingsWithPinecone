@@ -15,7 +15,7 @@ env_loaded = load_dotenv()
 
 
 if not st.session_state.get("pinecone"):
-    st.session_state["pinecone_index"] = pinecone.Pinecone().Index(name="openai")
+    st.session_state["pinecone_index"] = pinecone.Pinecone().Index(name=os.getenv("PINECONE_INDEX_NAME"))
     
 if not st.session_state.get("embedding_function"):
     def embedding_function(text: str) -> list[float]:
