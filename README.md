@@ -35,7 +35,7 @@ PINECONE_INDEX_NAME=pinecone_index_name_here
 
 ## Setup
 
-#### Pinecone
+### Pinecone
 
 You will need to create an Index in Pinecone. Navigate to their [site](https://app.pinecone.io/), create an account, and create an Index using their free tier!
 
@@ -43,7 +43,7 @@ When creating this Index, note the name you use and add it the `.env` file we cr
 
 If you intend to use the `text-embedding3-large` embedding model from OpenAI, we will want to use a dimensions of **3072**. Otherwise, if we are using `text-embedding-3-small` or older models, we will want to use a dimension of **1536**.
 
-#### Adding to the Index
+### Adding to the Index
 
 I have a provided file, `main.ipynb` which can be ran to insert a number of documents into our Pinecone index. Feel free to run this to insert some test data into our index.
 
