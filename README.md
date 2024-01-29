@@ -37,7 +37,7 @@ PINECONE_INDEX_NAME=pinecone_index_name_here
 
 #### Pinecone
 
-You will need to create an Index in Pinecone. Navigate to their ![site](https://app.pinecone.io/), create an account, and create an Index using their free tier!
+You will need to create an Index in Pinecone. Navigate to their [site](https://app.pinecone.io/), create an account, and create an Index using their free tier!
 
 When creating this Index, note the name you use and add it the `.env` file we created. When you create you account, this is also where you will find the Pinecone API key we will use in the `.env` file.
 
