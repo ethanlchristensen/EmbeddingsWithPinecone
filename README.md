@@ -1,6 +1,6 @@
 # Pinecone Embeddings Storage
 
-![image](https://github.com/ethanlchristensen/EmbeddingsWithPinecone/assets/55725575/dbadf9ff-8f61-4f42-b65d-07669e73efb4)
+![image](https://github.com/ethanlchristensen/EmbeddingsWithPinecone/assets/55725575/66bfc411-8e34-4b2e-b90f-78a90a55b3d6)
 
 ## Overview
 
