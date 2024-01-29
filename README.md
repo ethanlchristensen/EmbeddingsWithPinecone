@@ -1,5 +1,7 @@
 # Pinecone Embeddings Storage
 
+![image](https://github.com/ethanlchristensen/EmbeddingsWithPinecone/assets/55725575/dbadf9ff-8f61-4f42-b65d-07669e73efb4)
+
 ## Overview
 
 This repository contains code and examples for using Pinecone, a vector database, to store and manage embeddings. 
